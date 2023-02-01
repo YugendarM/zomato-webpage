@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #ebf2ff;
+}
+
+.nav__container {
+    background-color: #f9fafc;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow:0 10px 15px -3px rgb(0 0 0 / 10%) ;
+}
+
+.logo__container {
+    width: 100px;
+}
+
+.logo__image {
+    width: 100%;
+}
+
+.primary__button {
+    border: none;
+    background-image: linear-gradient(to right, #ff512f 0%, #dd2476 100%);
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.primary__button:hover {
+    background-image: linear-gradient(to right, #dd2476 0%, #ff512f 100%);
+}
+
+
+.container {
+    max-width: 100%;
+    padding: 20px ;
+    margin: 0 auto;
+}
+
+
+
+.hero__image__container {
+    width: 100%;
+}
+
+.hero__image {
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+}
+
+.hero__text {
+    font-size: 30px;
+    font-weight: 800;
+    margin: 20px 0;
+    color: #1d3557;
+}
+
+.explore__menu__section {
+    margin-top: 20px;
+}
+
+.explore__menu__text {
+    text-align: center;
+    margin-top: 20px;
+    color: #1d3557;
+    font-weight: 800;
+}
+
+.food__card {
+    margin-top: 20px;
+    box-shadow:  0 25px 50px -12px rgb(0 0 0 / 25%);
+    border-radius: 6px;
+    background-color: #ebf2ff;
+}
+.food__card__image__container {
+    width: 100%;
+}
+
+.food__image {
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+}
+
+.food__card__description {
+    padding: 15px;
+    background-color: #ebf2ff;
+    border-radius: 0 0 6px 6px;
+}
+
+.food__span {
+    color: #ff512f;
+}
+
+@media (min-width: 768px) {
+    .logo__container {
+        width: 150px;
+    }
+
+    .primary__button {
+        font-size: 20px ;
+        padding: 20px,30px;
+    }
+
+    .nav__container {
+        padding: 0 20px;
+    }
+
+    /* .hero__images__container {
+        /* position: static; */
+        /* width: 800px; */
+    /*}
+    .hero__container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 200px;
+    }
+
+    .hero__pattern__image{
+        position: absolute;
+    }
+
+    .hero__description__text {
+        font-size: 30px;
+    }*/
+
+
+
+    /* Section2-Explore Menu  */
+    /*.explore__section {
+        margin-top: 500px;
+        padding: 20px;
+        background-image: linear-gradient(to right, #dd2476 0%, #ff512f 51% #dd2476 100%);
+        background-color: blue;
+    }
+
+    .explore__food__card {
+        display: flex;
+    }
+
+    .food__card {
+        margin: 10px;
+    } */
+    .hero__container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .explore__menu__container {
+        /* background-image: linear-gradient(to right, #ff512f 0%, #dd2476 100%); */
+        padding: 0 20px;
+        position: relative;
+        margin-top: 60px;
+    }
+
+    .explore__menu__list {
+        display: flex;
+        margin-top: 45px;
+        gap: 15px;
+    }
+
+    #pizza__card {
+        margin-top: -30px;
+        margin-bottom: 30px;
+        border-radius: 0 0 6px 6px ;
+    }
+
+    
+
+    .explore__menu__gradient__bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: blue;
+        background-image: linear-gradient(to right, #ff512f 0%, #dd2476 100%);
+        top: 0;
+        left: 0;
+        transform: skewY(-5deg) ;
+        z-index: -2;
+    }
+
+    .view__more__btn__container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .view__more__btn {
+       text-align: center;
+       width: 80%;
+       margin: 30px;
+       margin-top: 40px;
+       font-size: 16px;
+       border: none;
+       border-radius: 5px;
+       padding: 10px 15px;
+       color: white;
+       background-color: transparent;
+       font-family: 'Merriweather',serif;
+       transition: 0.3s;
+    }
+
+    .view__more__btn:hover {
+        background-color: white;
+        color: #dd2476;
+        width:40%;
+    }
+
+
+    
+}
+
+@media (min-width: 1024px) {
+
+    .container {
+        max-width: 70%;
+    }
+ 
+    .nav__container {
+        padding: 0 100px;
+    }
+
+    .primary__button {
+        padding: 18px 32px;
+        font-size: 22px;
+        margin: 0 auto;
+        font-weight: 600;
+    }
+
+    .hero__description {
+        width: 100%;
+    }
+    
+    .explore__menu__text{
+        font-size: 48px;
+    }
+
+    
+    
+    
+}
+
+
+
+
+
+
+
+@media (min-width: 1280px){
+
+    .hero__text {
+        font-size: 50px;
+    }
+
+    .explore__menu__list {
+        gap: 25px;
+    }
+}
