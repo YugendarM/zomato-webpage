@@ -101,9 +101,155 @@ body {
     color: #ff512f;
 }
 
+.view__more__btn__container {
+    display: flex;
+    justify-content: center;
+}
+
+.view__more__btn {
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 15px;
+    color: white;
+    background-image: linear-gradient(to right, #dd2476 0%, #ff512f 100%);
+    font-family: 'Merriweather',serif;
+    transition: 0.3s;
+}
+
+.view__more__btn:hover {
+     background-color: white;
+     color: #dd2476;
+     
+}
+
+.restaurant__section__description {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.restaurant__description__text {
+    font-size: 24px;
+    color: #1d3557;
+    font-weight: 900;
+}
+
+.restaurant__upper__images {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.restaurant__lower__images {
+    display: flex;
+    gap: 10px;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.restaurant__small__image {
+    width: 150px;
+    height: 80px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%);
+    border-radius: 4px;
+} 
+
+.restaurant__big__image {
+    width: 200px;
+    height: 100px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%);
+    border-radius: 4px;
+
+}
+
+.stayupdated__section__container {
+    margin-top: 60px;
+}
+
+.stayupdated__text {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #1d3557;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.stayudated__input {
+    border: 1px solid #ee89a0;
+    background-color: #fcedf0;
+    color: #000;
+    font-weight: 700;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.stayudated__input::placeholder {
+    color: lightgrey;
+}
+
+.text__over__image__container {
+    margin-top: 40px;
+    position: relative;
+}
+
+.text__over__image__image__container {
+    /* position: relative; */
+    z-index: -2;
+}
+
+.text__overlay__image {
+    height: 200px;
+    width: 100%;
+    border-radius: 15px;
+    filter: brightness(0.5) ;
+    z-index: -2;
+    object-fit: cover;
+}
+
+.text__over__image__description {
+    position: absolute;
+    padding:0 10px;
+    font-family: 'Merriweather',serif;
+    top: 30%;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 1.17rem;
+}
+
+.footer__container {
+    background-image: linear-gradient(to right, #dd2476 0%, #ff512f 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px 15px 0 0 ;
+    margin-top: 40px;
+}
+
+.footer__logo {
+    width: 300px;
+    filter: brightness(0) invert(1);
+}
+
+.footer__list {
+    list-style: none;
+    color: #fff;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: 400px;
+}
+
+
+
+
 @media (min-width: 768px) {
     .logo__container {
-        width: 150px;
+        width: 100px;
     }
 
     .primary__button {
@@ -115,43 +261,6 @@ body {
         padding: 0 20px;
     }
 
-    /* .hero__images__container {
-        /* position: static; */
-        /* width: 800px; */
-    /*}
-    .hero__container {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: center;
-        padding: 200px;
-    }
-
-    .hero__pattern__image{
-        position: absolute;
-    }
-
-    .hero__description__text {
-        font-size: 30px;
-    }*/
-
-
-
-    /* Section2-Explore Menu  */
-    /*.explore__section {
-        margin-top: 500px;
-        padding: 20px;
-        background-image: linear-gradient(to right, #dd2476 0%, #ff512f 51% #dd2476 100%);
-        background-color: blue;
-    }
-
-    .explore__food__card {
-        display: flex;
-    }
-
-    .food__card {
-        margin: 10px;
-    } */
     .hero__container {
         display: flex;
         flex-direction: row-reverse;
@@ -192,49 +301,71 @@ body {
         z-index: -2;
     }
 
-    .view__more__btn__container {
+    
+    .view__more__btn {
+        color: white;
+        background-image: none;
+        background-color: transparent;
+        width: 100%;
+    }
+    
+    .restaurant__section {
+        display: flex;
+        margin-top: 60px;
+        align-items:  center;
+    }
+
+    .restaurant__description__text {
+        font-size: 30px;
+    }
+
+    .restaurant__section {
+        justify-content: space-between;
+    }
+    
+    .stayupdated__section__container {
         display: flex;
         justify-content: center;
     }
 
-    .view__more__btn {
-       text-align: center;
-       width: 80%;
-       margin: 30px;
-       margin-top: 40px;
-       font-size: 16px;
-       border: none;
-       border-radius: 5px;
-       padding: 10px 15px;
-       color: white;
-       background-color: transparent;
-       font-family: 'Merriweather',serif;
-       transition: 0.3s;
+    .stayupdated__text {
+        font-size: 30px;
     }
 
-    .view__more__btn:hover {
-        background-color: white;
-        color: #dd2476;
-        width:40%;
+    .stayudated__input {
+        width: 20rem;
     }
 
+    .text__overlay__image {
+        height: 300px;
+    }
 
-    
+    .text__over__image__description {
+        font-size: 32px;
+        font-weight: 500;
+        font-family: 'Merriweather', serif;
+        top: 40%;
+    }
+
+    .footer__container {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 }
 
 @media (min-width: 1024px) {
 
-    .container {
+    /* .container {
         max-width: 70%;
-    }
+    } */
  
     .nav__container {
-        padding: 0 100px;
+        padding: 0 50px;
     }
 
     .primary__button {
-        padding: 18px 32px;
-        font-size: 22px;
+        padding: 1rem 2rem;
+        font-size: 1rem;
         margin: 0 auto;
         font-weight: 600;
     }
@@ -244,9 +375,13 @@ body {
     }
     
     .explore__menu__text{
+        font-family: 'Merriweather',serif;
         font-size: 48px;
     }
 
+    .view__more__btn:hover {
+        width:40%;
+    }
     
     
     
@@ -260,11 +395,37 @@ body {
 
 @media (min-width: 1280px){
 
+    .container {
+        max-width: 75%;
+    }
+
     .hero__text {
-        font-size: 50px;
+        font-size: 48px;
     }
 
     .explore__menu__list {
         gap: 25px;
+    }
+
+    .restaurant__description__text {
+        font-size: 48px;
+    }
+
+    .restaurant__big__image {
+        width: 300px;
+        height: 260px;
+    }
+
+    .restaurant__small__image {
+        width: 250px;
+        height: 180px;
+    }
+
+    .stayupdated__text {
+        font-size: 48px;
+    }
+
+    .text__over__image__description {
+        margin: 0 10px;
     }
 }
